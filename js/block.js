@@ -201,6 +201,9 @@ export function getSelectedBlocksMetadata(editorState: EditorState): Map {
 const newBlockRenderMap = Map({
   'code': {
     element: 'pre'
+  },
+  'address': {
+    element: 'address'
   }
 });
 

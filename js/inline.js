@@ -140,6 +140,9 @@ export const customInlineStylesMap =
       borderRadius: 3,
       padding: '1px 3px',
     },
+    ADDRESS: {
+      color: '#005cc5',
+    },
     SUPERSCRIPT: {
       fontSize: 11,
       position: 'relative',
@@ -171,6 +174,7 @@ export const getCustomStyleMap = () => { // eslint-disable-line
     ...customInlineStylesMap.fontSize,
     ...customInlineStylesMap.fontFamily,
     CODE: customInlineStylesMap.CODE,
+    ADDRESS: customInlineStylesMap.ADDRESS,
     SUPERSCRIPT: customInlineStylesMap.SUPERSCRIPT,
     SUBSCRIPT: customInlineStylesMap.SUBSCRIPT,
   };
@@ -220,7 +224,7 @@ export function toggleCustomInlineStyle(
 }
 
 /**
- * 
+ *
  */
 export function extractInlineStyle(editorState) {
   if(editorState) {
